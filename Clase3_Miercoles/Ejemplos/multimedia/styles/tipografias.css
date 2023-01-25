@@ -1,0 +1,19 @@
+/* Tipografía */
+
+/* Importación de tipografía de google: */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Extra: */
+
+.titulo-cancion {
+    margin: 0;
+    position: absolute;
+    top: 65%;
+}

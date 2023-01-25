@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 1800px;
+    min-width: 100vw;
+    background-color: rgb(235, 255, 80);
+}
+
+.padre {
+    background-color: rgb(132, 224, 227);
+    margin: auto;
+    margin-top: 50px;
+    height: 800px;
+    width: 80%;
+    position: relative;
+}
+
+.hijo {
+    /* display: inline-block; */
+    height: 100px;
+    width: 100px;
+    background-color: rgb(236, 126, 86);
+    border: 5px solid black;
+}
+
+.hijo--estatica {
+    position: static;
+    left: 100px;
+}
+
+.hijo--relativo {
+    position: relative;
+    background-color: darkmagenta;
+    width: 200px;
+    height: 200px;
+    left: 200px;
+    /* top: 100px; */
+    /* z-index: 1; */
+}
+
+.hijo--absoluto {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    /* left: 10px; */
+}
+
+.hijo--fijo {
+    /* position: fixed; */
+    border-radius: 50%;
+}
+
+.hijo--sticky {
+    position: sticky;
+    top: 0;
+}

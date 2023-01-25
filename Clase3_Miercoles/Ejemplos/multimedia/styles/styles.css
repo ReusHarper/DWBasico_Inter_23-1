@@ -1,0 +1,45 @@
+/* Elementos semanticos */
+
+body {
+    margin: 0;
+    box-sizing: content-box;
+    min-height: 100vh;
+    min-width:  100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Extras */
+
+.contenedor-imagen {
+    position: absolute;
+    top: 14%;
+    height: 17.5rem;
+    width:  17.5rem;
+    border: solid 2px #ffffff;
+}
+
+.imagen-cancion {
+    width:  100%; 
+    height: 100%;
+    vertical-align: middle;
+}
+
+@supports(object-fit: cover){
+    .contenedor-imagen, .imagen-cancion{
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+/* Si se desea no deshabilitar la funcionalidad del scroll, se elimina overflow y se emplea: */
+
+/*
+::-webkit-scrollbar { 
+    display: none;
+}
+*/
